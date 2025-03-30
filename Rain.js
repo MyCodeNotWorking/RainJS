@@ -4,18 +4,13 @@ class RainBody {
     this.borderWidth = options.borderWidth || 0.05;
     this.borderColor = options.borderColor || "black";
     this.vertices = options.vertices || [{x: 1, y: 1}, {x: 1.5, y: 1}, {x: 1.5, y: 1.5}, {x: 1, y: 1.5}];
-  } // units of measurement is in meters, this is a rigidbody
+  } // units of measurement is in meters, this library will have a rigid body and a static body
 }
 
 class RainScene {
   constructor(options = {}) {
     this.objects = [];
     this.backgroundColor = options.backgroundColor || "lightblue";
-    //add properties like gravity and sleep so that the scene can be paused
-  }
-  
-  update() {
-    // ... 
   }
 
   addBody(body) {
